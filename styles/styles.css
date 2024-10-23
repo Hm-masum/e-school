@@ -191,4 +191,7 @@ li{
     .banner-title, .banner-description{
         text-align: center;
     }
+    .get-button{
+        margin: auto;
+    }
 }
