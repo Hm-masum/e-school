@@ -5,7 +5,7 @@
 .common-btn{
     color: white;
     background-color: #21B573;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 50px;
     border: none;
 }
@@ -35,15 +35,10 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-
 }
 
 li{
     list-style-type: none;
-}
-
-.project-name{
-    font-size: 25px;
 }
 
 .brand-img{
@@ -58,7 +53,7 @@ li{
     max-width: 1200px;
     margin: auto;
     gap: 20px;
-    padding: 0 20px;
+    padding: 30px 20px;
 }
 
 .banner-description{
@@ -84,6 +79,7 @@ li{
 
 .banner-title{
     font-size: 45px;
+    width: 60%;
 }
 
 /* Analytics Css */
@@ -122,21 +118,54 @@ li{
     height: 70px;
 }
 
+/* course container */
+.course-container{
+    margin: 50px 0;
+}
 
+.course-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.course-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.common-stats-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.common-stats{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.course-img{
+    width: 100%;
+}
+
+.course-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
 
 
 
 
 @media screen and (max-width: 576px) {
-    .nav-links{
-        display: flex;
+    .nav-links, .navbar,.common-stats-cont{
         flex-direction: column;
-    }
-    
-    .navbar{
-        display: flex;
-        flex-direction: column;
-    
     }
 
     ul{
@@ -144,18 +173,15 @@ li{
     }
 
     .banner{
-        display: flex;
         flex-direction: column-reverse;
         gap: 50px;
     }
 
-    .banner-description, .banner-content, .banner-img{
+    .banner-description, .banner-content, .banner-img,.banner-title{
         width: 100%;
-        
     }
 
-    .analytics-container{
-        display: grid;
+    .analytics-container,.course-content{
         grid-template-columns: repeat(1,1fr);
     }
     
@@ -164,7 +190,6 @@ li{
 @media screen and (min-width: 576px) and (max-width: 992px){
     
     .navbar{
-        display: flex;
         flex-direction: column;
     }
 
@@ -173,7 +198,6 @@ li{
     }
 
     .banner{
-        display: flex;
         flex-direction: column-reverse;
         gap: 50px;
     }
@@ -182,16 +206,17 @@ li{
         width: 100%;
         
     }
+    .banner-title,.get-button{
+        margin: auto;
+    }
 
     .analytics-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
 
-    .banner-title, .banner-description{
+    .banner-title, .banner-description,.banner-des{
         text-align: center;
     }
-    .get-button{
-        margin: auto;
-    }
+    
 }
